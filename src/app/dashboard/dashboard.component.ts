@@ -1,21 +1,19 @@
 import {Component, OnInit} from '@angular/core';
-import {FormsModule} from '@angular/forms';
 import {NgForOf} from '@angular/common';
 import {Hero} from '../hero';
 import {HeroService} from '../hero.service';
 import {RouterLink} from '@angular/router';
 
 @Component({
-  selector: 'app-heroes',
+  selector: 'app-dashboard',
   imports: [
-    FormsModule,
     NgForOf,
     RouterLink
   ],
-  templateUrl: './heroes.component.html',
-  styleUrl: './heroes.component.css'
+  templateUrl: './dashboard.component.html',
+  styleUrl: './dashboard.component.css'
 })
-export class HeroesComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
   heroes: Hero[] = [];
 
@@ -27,7 +25,8 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
+    this.heroService.getHeroes()
+      .subscribe(heroes => this.heroes = heroes.slice(1, 5));
   }
 
 }
