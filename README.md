@@ -1,4 +1,8 @@
-# AngularTourOfHeroes
+# Tour of Heroes | Angular
+
+This project was developed following the [Tour of Heroes application and tutorial](https://v17.angular.io/tutorial/tour-of-heroes).
+
+**Since the tutorial was written for Angular 17, you may also find this [article](https://www.guido-flohr.net/standalone-angular-tour-of-heroes/) helpful. It highlights the differences between Angular 17 and Angular 18 when implementing the [Tour of Heroes application and tutorial](https://v17.angular.io/tutorial/tour-of-heroes).**
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
